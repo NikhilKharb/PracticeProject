@@ -24,7 +24,8 @@ public class FramesDragAndDrop {
 		
 		WebElement b1 =driver.findElement(By.id("draggable"));
 		WebElement b2 =driver.findElement(By.id("droppable"));
-		a.dragAndDrop(b1, b2);
+		a.dragAndDrop(b1, b2).build().perform(); 
+		driver.quit();
 	}
 
 }
